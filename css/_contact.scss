@@ -1,0 +1,89 @@
+.contact {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .box-a,
+  .box-b {
+    width: 100%;
+    padding: 0;
+  }
+
+  .box-a {
+    padding-bottom: 30px;
+
+    .main-contact-form {
+      display: flex;
+      flex-direction: column;
+
+      input,
+      textarea {
+        border: 1px solid $clr-light-gray;
+        border-radius: $brd-radius-02;
+        font-size: 18px;
+        font-family: $font-family;
+        // font-weight: 700;
+        margin-bottom: 15px;
+        padding: 16px 20px 15px 34px;
+      }
+
+      textarea {
+        resize: none;
+      }
+
+      button {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .box-b {
+    h2 {
+      font-size: 16px;
+    }
+
+    #time-table,
+    ul,
+    p {
+      margin-bottom: 37px;
+    }
+
+    #time-table td {
+      padding-right: 20px;
+    }
+  }
+
+  @include screen-size(lg) {
+    flex-direction: row;
+
+    .box-a,
+    .box-b {
+      width: 50%;
+    }
+
+    .box-a {
+      div {
+        padding: 0px 140px 0 90px;
+      }
+    }
+
+    .box-b {
+      padding-left: 60px;
+      padding-right: 178px;
+      h2 {
+        font-size: 16px;
+      }
+
+      #time-table,
+      ul,
+      p {
+        margin-bottom: 37px;
+      }
+
+      #time-table td {
+        padding-right: 20px;
+      }
+    }
+  }
+}

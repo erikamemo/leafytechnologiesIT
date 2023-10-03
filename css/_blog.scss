@@ -1,0 +1,48 @@
+// ultimi post grid
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 10px;
+
+  .post-thumb {
+    a {
+      pointer-events: none;
+      cursor: default;
+      .post-thumb-content {
+        display: flex;
+        color: $clr-dark;
+        flex-direction: column;
+        width: 397px;
+
+        .post-thumb-content-top {
+          height: 231px;
+          margin-bottom: 7px;
+          img {
+            object-fit: cover;
+          }
+        }
+        .post-thumb-content-bottom {
+          min-height: 231px;
+
+          span {
+            font-size: 14px;
+          }
+          h2 {
+            font-size: 22px;
+            margin-top: 10px;
+            margin-bottom: 17.5px;
+          }
+          p {
+            font-size: 19px;
+          }
+        }
+      }
+    }
+  }
+
+  @include screen-size(lg) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 33px;
+    grid-row-gap: 89px;
+  }
+}

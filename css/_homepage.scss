@@ -1,0 +1,575 @@
+@include screen-size(xs) {
+  .hero-header {
+    background: url("https://www.leafytechnologies.it/images/mobile/homepage/header-hero-768x670.jpg")
+        no-repeat,
+      url("https://www.leafytechnologies.it/images/mobile/homepage/header-hero-768x670.webp")
+        no-repeat;
+    height: 92.5vh;
+    .hero-text {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      h1 {
+        margin-top: 22vh;
+        color: $clr-white;
+        text-align: center;
+      }
+      .hero-btns {
+        margin-top: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-bottom: 40px;
+
+        .btn {
+          width: 30%;
+          &:nth-child(3) {
+            margin-top: 12px;
+            width: 100%;
+          }
+        }
+      }
+      .parameters-list {
+        display: none;
+      }
+    }
+  }
+  .home-section-wrap {
+    padding-top: 13px;
+    padding-bottom: 13px;
+    .home-section-title {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 17px;
+      h3 {
+        text-transform: capitalize;
+        a {
+          color: $clr-dark;
+        }
+      }
+
+      a:nth-child(2) {
+        padding-left: 140px;
+      }
+    }
+
+    /*| applications |*/
+    .application {
+      padding-bottom: 14px;
+      .application-top {
+        height: 70px;
+        .application-icon {
+          // border: 3px solid $clr-blue;
+          // border-radius: 50%;
+          height: 54px;
+          margin-left: auto;
+          margin-right: auto;
+          width: 54px;
+          .img-wrap {
+            width: 100%;
+            height: 100%;
+            // border-radius: 50%;
+            img {
+              // border-radius: 50%;
+              width: 100%;
+              height: 100%;
+              object-fit: contain;
+            }
+          }
+        }
+      }
+      .application-bottom {
+        h2 {
+          color: $clr-dark;
+          font-size: 16px;
+          text-align: center;
+        }
+      }
+    }
+
+    /*| biblio |*/
+
+    &.biblio,
+    &.home-news {
+      padding-top: 31px;
+      padding-bottom: 31px;
+    }
+    &.biblio {
+      background: url("https://www.leafytechnologies.it/images/mobile/homepage/biblio-450x515.jpg")
+          no-repeat center center/cover,
+        url("https://www.leafytechnologies.it/images/mobile/homepage/biblio-450x515.webp")
+          no-repeat center center/cover;
+      height: 60vh;
+
+      img {
+        display: none;
+      }
+
+      ul {
+        list-style: none;
+        text-align: center;
+        line-height: 2;
+        li {
+          a {
+            color: $clr-black;
+            font-size: 19px;
+            font-weight: 700;
+            text-transform: capitalize;
+          }
+        }
+      }
+    }
+
+    /* applicazioni */
+    .applications {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 10px;
+    }
+
+    .news-wrap {
+      display: flex;
+      flex-direction: column;
+      .news {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        min-height: 511px;
+
+        a {
+          pointer-events: none;
+          cursor: default;
+          .news-top {
+            height: 231px;
+            img {
+              object-fit: cover;
+            }
+          }
+          .news-bottom {
+            color: $clr-dark;
+            display: flex;
+            flex-direction: column;
+            // min-height: 160px;
+            justify-content: space-between;
+            margin-top: 8px;
+
+            .date {
+              color: $clr-dark;
+              font-size: 14px;
+            }
+
+            h4 {
+              color: $clr-black;
+              font-size: 22px;
+              margin-top: 10px;
+              margin-bottom: 8px;
+            }
+
+            p {
+              color: $clr-dark;
+              font-size: 19px;
+            }
+          }
+        }
+      }
+    }
+    .link {
+      display: none;
+    }
+  }
+}
+
+@include screen-size(md) {
+  .hero-header {
+    background-image: url("https://www.leafytechnologies.it/images/desktop/homepage/header-hero.jpg"),
+      url("https://www.leafytechnologies.it/images/desktop/homepage/header-hero.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    .hero-text {
+      flex-direction: row-reverse;
+      justify-content: center;
+      align-items: center;
+
+      div {
+        overflow: hidden;
+        margin-left: 40px;
+        h1 {
+          font-size: 48px;
+          margin-top: 0;
+          text-align: left;
+          animation-name: slideInRight;
+          animation-duration: 1s;
+          animation-delay: 0.5s;
+          animation-fill-mode: forwards;
+          transform: translateX(-110%);
+        }
+      }
+
+      #parameter,
+      .hero-btns {
+        display: none;
+      }
+      .v-line {
+        width: 3px;
+        height: 75%;
+        display: block;
+        background-color: $clr-white;
+      }
+      .parameters-list {
+        display: block;
+        line-height: 2;
+        list-style: none;
+        text-align: right;
+        margin-right: 10px;
+        a {
+          color: $clr-white;
+          display: block;
+          font-size: 19px;
+          height: 0px;
+          opacity: 0;
+          animation-name: slideInCenter;
+          animation-duration: 1s;
+          animation-delay: 0.9s;
+          animation-fill-mode: forwards;
+          transition: font-size 1s ease;
+          &:hover {
+            font-size: 21px;
+          }
+        }
+      }
+      // Animation
+      @keyframes slideInRight {
+        to {
+          transform: translateX(0);
+        }
+      }
+      @keyframes slideInCenter {
+        to {
+          height: 35px;
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  /* cronos and crius */
+  .home-analyzers {
+    display: flex;
+    flex-direction: row;
+    height: 280px;
+    justify-content: space-around;
+    margin-top: 258px;
+    padding-top: 23px;
+    padding-bottom: 72px;
+    .box-1 {
+      transform: translateY(-180px);
+    }
+    .box-2 {
+      color: $clr-white;
+      width: 377px;
+      h2 {
+        font-size: 30px;
+        font-weight: 600;
+        span {
+          font-size: 20px;
+          font-weight: 400;
+          text-transform: capitalize;
+        }
+      }
+      p {
+        margin-top: 37px;
+        margin-bottom: 45px;
+      }
+      .btn {
+        margin-right: 30px;
+      }
+    }
+  }
+  .home-section-wrap {
+    padding-top: 97px;
+    padding-bottom: 0;
+    .home-section-title {
+      display: block;
+      svg {
+        display: none;
+      }
+    }
+
+    /* parametri */
+    .home-parameter-desktop {
+      align-items: center;
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-column-gap: 25px;
+      grid-row-gap: 44px;
+
+      .parameter-item {
+        background-color: white;
+        background-position: -700%;
+        background-repeat: no-repeat;
+        background-size: 90% 100%;
+        border-radius: $brd-radius-02;
+        box-shadow: 0 3px 6px rgba($clr-black, 0.2);
+        text-align: center;
+        transition: all 0.3s ease-out;
+        text-transform: capitalize;
+
+        &:nth-child(1) {
+          background-image: url("https://www.leafytechnologies.it/images/desktop/homepage/parameter-01.jpg"),
+            url("https://www.leafytechnologies.it/images/desktop/homepage/parameter-01.webp");
+        }
+        &:nth-child(2) {
+          background-image: url("https://www.leafytechnologies.it/images/desktop/homepage/p-2.jpg"),
+            url("https://www.leafytechnologies.it/images/desktop/homepage/p-2.webp");
+        }
+        &:nth-child(3) {
+          background-image: url("https://www.leafytechnologies.it/images/desktop/homepage/p-4.jpg"),
+            url("https://www.leafytechnologies.it/images/desktop/homepage/p-4.webp");
+        }
+        &:nth-child(5) {
+          background-image: url("https://www.leafytechnologies.it/images/desktop/homepage/p-7.jpg"),
+            url("https://www.leafytechnologies.it/images/desktop/homepage/p-7.webp");
+        }
+        &:nth-child(6) {
+          background-image: url("https://www.leafytechnologies.it/images/desktop/homepage/p-cloro-440x63.jpg"),
+            url("https://www.leafytechnologies.it/images/desktop/homepage/p-cloro-440x63.webp");
+        }
+        &:nth-child(7) {
+          background-image: url("https://www.leafytechnologies.it/images/desktop/homepage/p-6.jpg"),
+            url("https://www.leafytechnologies.it/images/desktop/homepage/p-6.webp");
+        }
+
+        a {
+          color: $clr-black;
+          display: block;
+          font-weight: 700;
+          padding: 21px 0 19px 0;
+          transition: color 0.4s ease;
+          &:hover {
+            color: $clr-white;
+          }
+        }
+
+        &:hover {
+          background-position: center;
+          background-size: 100% 100%; // 100% 100%
+        }
+
+        &:nth-child(4) {
+          background-size: 0% 0%;
+          border-radius: 0;
+          box-shadow: 0 0 0 rgba($clr-black, 0);
+          grid-column: span 3;
+          justify-self: center;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+
+          div {
+            background-color: white;
+            background-position: -700%;
+            background-repeat: no-repeat;
+            background-size: 90% 100%;
+            border-radius: $brd-radius-02;
+            box-shadow: 0 3px 6px rgba($clr-black, 0.2);
+            width: 432px;
+            transition: all 0.3s ease-out;
+
+            &:hover {
+              background-position: center;
+              background-size: 100% 100%; // 100% 100%
+            }
+
+            &:nth-child(1) {
+              background-image: url("https://www.leafytechnologies.it/images/desktop/homepage/p-5.jpg"),
+                url("https://www.leafytechnologies.it/images/desktop/homepage/p-5.webp");
+              margin-right: 25px;
+            }
+            &:nth-child(2) {
+              background-image: url("https://www.leafytechnologies.it/images/desktop/homepage/p-4.jpg"),
+                url("https://www.leafytechnologies.it/images/desktop/homepage/p-4.webp");
+            }
+          }
+        }
+        &:nth-child(5) {
+          grid-column: 1 / 2;
+        }
+      }
+    }
+
+    /* highlight */
+    .home-highlight-wrap {
+      .home-highlight {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        height: 578px;
+        justify-content: center;
+        .box-a {
+          width: 30%;
+        }
+        .box-b {
+          width: 50%;
+          h2 {
+            font-size: 48px;
+          }
+          p {
+            margin-top: 46px;
+            margin-bottom: 54px;
+          }
+          .link {
+            margin-right: 29px;
+          }
+        }
+      }
+      .home-highlight:nth-child(2) {
+        flex-direction: row-reverse;
+      }
+    }
+
+    /* applications */
+    .applications {
+      // border: 3px solid red;
+      grid-template-columns: repeat(4, 1fr);
+      grid-column-gap: 20px;
+      grid-row-gap: 34px;
+      /*| applications |*/
+      .application {
+        border-radius: $brd-radius-02;
+        height: 173px;
+        .application-top {
+          height: 107px;
+          .application-icon {
+            border: none;
+            border-top-left-radius: $brd-radius-02;
+            border-top-right-radius: $brd-radius-02;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+            height: 100%;
+            margin-left: 0;
+            margin-right: 0;
+            width: 100%;
+            // max-width: 215px;
+
+            .img-wrap {
+              width: 100%;
+              height: 100%;
+              overflow: hidden;
+              text-align: center;
+
+              img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                transform: scale(1) translateY(0px);
+                transition: transform 0.2s ease-in-out;
+              }
+            }
+          }
+        }
+        .application-bottom {
+          padding-top: 16px;
+          padding-bottom: 9px;
+          h2 {
+            font-size: 18px;
+            font-weight: 300;
+          }
+        }
+        &:hover {
+          .application-top {
+            .application-icon {
+              .img-wrap {
+                overflow: visible;
+                img {
+                  transform: scale(1.2) translateY(-10px);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    /* biblio */
+    &.biblio {
+      background-image: none;
+      // background-color: lighten(#e4e9ff, 50%);
+      height: 80vh;
+      .biblio-wrap {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          display: block;
+        }
+
+        div {
+          width: 60%;
+        }
+
+        ul {
+          border-left: 1px solid $clr-dark;
+          text-align: left;
+          line-height: 4;
+          width: 40%;
+          li {
+            margin-left: 32px;
+            a {
+              margin-left: 0;
+              transition: margin-left 0.2s ease;
+              &:hover {
+                margin-left: 10px;
+              }
+            }
+            &:last-child a {
+              border-bottom: 1px solid $clr-dark;
+              color: $clr-dark;
+              font-weight: 300;
+              letter-spacing: 1px;
+              line-height: 1.5;
+              text-decoration: none;
+              white-space: nowrap;
+            }
+          }
+        }
+      }
+    }
+
+    /* news */
+    .news-wrap {
+      flex-direction: row;
+      justify-content: space-around;
+      .news {
+        width: 30%;
+      }
+    }
+
+    /* company */
+    .company {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      .box-a,
+      .box-b {
+        width: 50%;
+      }
+
+      .box-b {
+        padding: 0 177px 0 133px;
+      }
+    }
+
+    .link {
+      display: inline-block;
+      // float: right;
+      margin-top: 40px;
+    }
+  }
+}

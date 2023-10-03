@@ -1,0 +1,128 @@
+.container-padding {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+/* media queries */
+// Breakpoints variable
+$breakpoints: (
+  xs: 0px,
+  sm: 576px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1140px, // 1280
+  xxl: 1140px, // 1400 are they needed?
+  xxxl: 1140px, // 1920
+);
+/* mixin */
+// Respond Above variable
+@mixin screen-size($breakpoint) {
+  // If the breakpoint exists in the map.
+  @if map-has-key($breakpoints, $breakpoint) {
+    // Get the breakpoint value
+    $breakpoint-value: map-get($breakpoints, $breakpoint);
+
+    // Write the media query
+    @media (min-width: $breakpoint-value) {
+      @content;
+    }
+
+    // If the breakpoint doesn't exist in the map
+  } @else {
+    // Log a warning
+    @warn 'Invalid breakpoint: #{$breakpoint}.';
+  }
+}
+
+/* container */
+@include screen-size(xs) {
+  .container {
+    max-width: 576px;
+    margin: 0 auto;
+  }
+  .lg-screen-show {
+    display: none;
+  }
+  .xl-screen-show {
+    display: none;
+  }
+}
+@include screen-size(md) {
+  .container {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+  .mobile-show {
+    display: none;
+  }
+  .md-show {
+    display: block;
+  }
+  .lg-screen-show {
+    display: none;
+  }
+  .xl-screen-show {
+    display: none;
+  }
+}
+@include screen-size(lg) {
+  .container {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+  .md-show {
+    display: none;
+  }
+  .lg-screen-show {
+    display: block;
+  }
+  .xl-screen-show {
+    display: none;
+  }
+  .mobile-show {
+    display: none !important;
+  }
+}
+@include screen-size(xl) {
+  .container {
+    width: 100%;
+    max-width: 1140px;
+    margin: auto;
+  }
+  .mobile-show {
+    display: none;
+  }
+  .lg-screen-show {
+    display: block;
+  }
+  .md-show {
+    display: none;
+  }
+  .xl-screen-show {
+    display: block;
+  }
+}
+@include screen-size(xxl) {
+  .container {
+    width: 100%;
+    max-width: 1140px;
+    margin: auto;
+  }
+}
+
+@include screen-size(xxxl) {
+  .container {
+    width: 100%;
+    max-width: 1140px;
+    margin: auto;
+  }
+}
+
+.wrapper-a {
+  padding-top: 25px;
+  padding-bottom: 22px;
+}
+.wrapper-b {
+  padding-top: 5px;
+  padding-bottom: 7px;
+}

@@ -1,0 +1,85 @@
+/*| COLOR |*/
+$clr-blue: rgb(38, 95, 170);
+$clr-green: rgb(12, 103, 29);
+$clr-light-gray: rgb(236, 236, 236);
+$clr-dark: rgb(68, 70, 72);
+$clr-black: rgb(0, 0, 0);
+$clr-white: rgb(255, 255, 255);
+
+/*| FONT |*/
+$font-family: "Inter", Helvetica, sans-serif;
+
+/**/
+$brd-radius-01: 2px;
+$brd-radius-02: 5px;
+
+/*| ROOT |*/
+*,
+*:after,
+*:before {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  
+  @include screen-size(lg) {
+  background-image: url("https://www.leafytechnologies.it/images/desktop/backgrounds/bg-body.jpg"), url("https://www.leafytechnologies.it/images/desktop/backgrounds/bg-body.webp");
+  background-repeat: repeat;
+  }
+  color: rgba(22, 22, 22, 1);
+  font-family: $font-family;
+  font-size: calc(12px + .35vw); /* responsive base font size */
+  line-height: calc(12px + 1.05vw); /* responsive vertical rhytm */
+}
+
+/**/
+h1 {
+  font-size: 1.912em;
+  line-height: calc(18px + 1.8vw); /* responsive vertical rhytm */
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.616em;
+  line-height: calc(18px + 1vw); /* responsive vertical rhytm */
+}
+
+h3 {
+  font-size: 1.3em;
+  line-height: calc(18px + .7vw); /* responsive vertical rhytm */
+  font-weight: 600;
+}
+
+h4{font-size: 1.3em}
+h5{font-size:1.243em}
+h6{font-size:1.132em}
+
+h4, h5, h6 {
+  line-height: calc(18px + .2vw);
+}
+
+/*| LINK |*/
+a {
+  text-decoration: none;
+}
+
+/*| Responsive image |*/
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+// contrast function background text
+
+@mixin text-contrast($n) {
+  $color-brightness: round((red($n) * 299) + (green($n) * 587) + (blue($n) * 114) / 1000);
+  $light-color: round((red(#ffffff) * 299) + (green(#ffffff) * 587) + (blue(#ffffff) * 114) / 1000);
+
+  @if abs($color-brightness) < ($light-color/2){
+    color: white;
+  }
+  @else {
+    color: black;
+  }
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <style>
+    .iframe-wrapper {
+      width: 100%;
+      margin-top: 30px;
+    }
+
+    .thDmodel-btn {
+      margin: 20px 0px;
+      padding: 10px 20px;
+      background-color: white;
+      color: rgb(38, 95, 170);
+      border: 1px solid rgb(38, 95, 170);
+      border-radius: 2px;
+      cursor: pointer;
+      transition: all 500ms ease;
+    }
+    .thDmodel-btn:hover {
+      background-color: rgb(38, 95, 170);
+      color: white;
+    }
+
+  </style>
+              <!-- 3D window frame  pH2  -->
+              
+              <div class="iframe-wrapper">
+                <button class="thDmodel-btn" onclick="changeIframe('https://processinstruments.autodesk360.com/shares/public/SH919a0QTf3c32634dcf43d2e47a13b841f1?mode=embed')">pH2</button>
+                <button class="thDmodel-btn" onclick="changeIframe('https://processinstruments.autodesk360.com/shares/public/SH919a0QTf3c32634dcf3dc554a387ee5654?mode=embed')">pH3</button>
+                <button class="thDmodel-btn" onclick="changeIframe('https://processinstruments.autodesk360.com/shares/public/SH919a0QTf3c32634dcf4e8f24f4d7a657e8?mode=embed')">pH5/6</button>
+                <button class="thDmodel-btn" onclick="changeIframe('https://processinstruments.autodesk360.com/shares/public/SH35dfcQT936092f0e43a02d18d4433c68a2?mode=embed')">pH1</button>
+                
+                <iframe id="iframeCustom" name="iframeCustom" style="width: 100%; height: 600px; border: none;" src="https://processinstruments.autodesk360.com/shares/public/SH919a0QTf3c32634dcf43d2e47a13b841f1?mode=embed" allowfullscreen>
+                </iframe>
+              </div>
+              <!-- 3D window frame END -->
+
+              <script>
+                function changeIframe(change){
+                  document.getElementById('iframeCustom').src = change;
+                }
+
+              </script>
+  
+</body>
+</html>

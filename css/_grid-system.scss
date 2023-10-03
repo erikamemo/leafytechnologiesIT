@@ -1,0 +1,112 @@
+/*| GRID SYSTEM |*/
+.scrollable-cards,
+.highlights,
+.grid-2-columns,
+.grid-3-columns,
+.bibliotecnica-grid {
+  display: grid;
+}
+
+// scroll horizontal for mobile
+.scrollable-cards,
+.highlights {
+  grid-template-columns: repeat(var(--total), 1fr);
+  grid-template-rows: minmax(150px, 1fr);
+  grid-auto-flow: column;
+  overflow-x: scroll;
+  scroll-snap-type: x proximity;
+}
+
+.scrollable-cards {
+  grid-gap: 10px;
+
+  &:before,
+  &:after {
+    content: "";
+    width: 10px;
+  }
+
+  @include screen-size(lg) {
+    grid-template-columns: repeat(2, calc(50% - 19px));
+    grid-template-rows: minmax(276px, 1fr);
+    grid-auto-flow: row;
+    grid-gap: 19px;
+    overflow: visible;
+    scroll-snap-type: none;
+
+    &:before,
+    &:after {
+      display: none;
+    }
+  }
+}
+
+// highlights products
+.highlights {
+  grid-gap: 20px;
+  padding-top: 24px;
+  padding-bottom: 39px;
+
+  .high {
+    width: 159px;
+    height: 180px;
+
+    .top {
+      height: 150px;
+    }
+    .bottom {
+      height: 30px;
+
+      h2 {
+        color: $clr-dark;
+        font-size: 19px;
+        text-align: center;
+      }
+    }
+  }
+
+  @include screen-size(lg) {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-right: 70px;
+    padding-top: 43px;
+    padding-bottom: 63px;
+
+    overflow-x: visible;
+    scroll-snap-type: none;
+
+    .high {
+      width: 206px;
+      height: 236px;
+
+      .top {
+        height: 206px;
+      }
+      .bottom {
+        height: 28px;
+      }
+    }
+  }
+}
+
+/*| GRID system |*/
+.grid-2-columns,
+.grid-3-columns {
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 10px;
+}
+
+.grid-2-columns {
+  @include screen-size(lg) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.grid-3-columns {
+  @include screen-size(lg) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 21px;
+    grid-row-gap: 2px;
+  }
+}
