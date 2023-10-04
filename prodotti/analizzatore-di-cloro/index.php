@@ -276,6 +276,11 @@
               <p> Per maggiori informazioni contattarci ai seguenti recapiti: Tel: <a
                 href="tel:+393714388849"> +39 371 438 8849</a>, E-mail: <a
                 href="mailto:info@leafytechnologies.com">info@leafytechnologies.com</a>. </p>
+               
+              <!-- 3D window frame -->
+              <iframe style="width: 100%; height: 600px;" src="https://processinstruments.autodesk360.com/shares/public/SH35dfcQT936092f0e4312df453e8ee2fb69?mode=embed" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" frameborder="0"></iframe>
+              <!-- 3D window frame END -->
+
               <section>
                 <h3>Principio di funzionamento </h3>
                 <p> Il sensore amperometrico HaloSense è un sistema a membrana migliorato attraverso un

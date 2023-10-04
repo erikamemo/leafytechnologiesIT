@@ -198,6 +198,29 @@
               <p> La natura modulare del sistema pHSense (sensore + analizzatore) permette di acquistare soltanto le opzioni richieste, senza perdere la capacità di integrare funzionalità aggiuntive qualora fossero necessarie in futuro. Se il progetto richiede un sistema semplice, conviene orientarsi verso <strong><a href="<?php echo $root; ?>prodotti/analizzatore-multiparametrico-base/">l'analizzatore multiparametrico di base CRONOS<sup>®</sup></a></strong>, altrimenti, se vi è la necessità di monitorare vari parametri (fino a 16), gestire vari segnali provenienti da strumenti diversi ed effettuare la telegestione via internet del sistema, si consiglia di orientarsi verso <strong><a href="<?php echo $root; ?>prodotti/analizzatore-multiparametrico-avanzato/">l'analizzatore multiparametrico avanzato CRIUS<sup>®</sup></a></strong>. </p>
               <p> Entrambi gli analizzatori possono essere interfacciati con vari sensori (<a href="<?php echo $root; ?>prodotti/analizzatore-di-cloro/">cloro</a>, <a href="<?php echo $root; ?>prodotti/misuratore-redox/">redox</a>, <a href="<?php echo $root; ?>prodotti/analizzatore-di-conducibilita/">conducibilità</a> etc.), eliminando la necessità di acquistare uno strumento per ogni parametro. </p>
               <p> Per maggiori informazioni contattarci ai seguenti recapiti: Tel: <a href="tel:+393714388849"> +39 371 438 8849</a>, E-mail: <a href="mailto:info@leafytechnologies.com">info@leafytechnologies.com</a>. </p>
+
+
+              <!-- 3D window frame pH2  -->
+              <div class="iframe-wrapper">
+                <button class="thDmodel-btn" onclick="changeIframe('https://processinstruments.autodesk360.com/shares/public/SH919a0QTf3c32634dcf43d2e47a13b841f1?mode=embed')">pH2</button>
+                <button class="thDmodel-btn" onclick="changeIframe('https://processinstruments.autodesk360.com/shares/public/SH919a0QTf3c32634dcf3dc554a387ee5654?mode=embed')">pH3</button>
+                <button class="thDmodel-btn" onclick="changeIframe('https://processinstruments.autodesk360.com/shares/public/SH919a0QTf3c32634dcf4e8f24f4d7a657e8?mode=embed')">pH5/6</button>
+                <button class="thDmodel-btn" onclick="changeIframe('https://processinstruments.autodesk360.com/shares/public/SH35dfcQT936092f0e43a02d18d4433c68a2?mode=embed')">pH1</button>
+
+                <iframe id="iframeCustom" name="iframeCustom" style="width: 100%; height: 600px; border: none;" src="https://processinstruments.autodesk360.com/shares/public/SH919a0QTf3c32634dcf43d2e47a13b841f1?mode=embed" allowfullscreen>
+                </iframe>
+              </div>
+
+              <script>
+                function changeIframe(change){
+                  document.getElementById('iframeCustom').src = change;
+                }
+
+              </script>
+              <!-- 3D window frame END -->
+
+
+
               <section>
                 <h3>Principio di funzionamento</h3>
                 <figure style="float: right; clear: left; margin-left: 16px;">
@@ -396,11 +419,11 @@
           </div>
         </div>
         <aside>
-          <div class="card-xl bg-gray">
+          <div class="btn-mega bg-gray">
             <p>Scheda prodotto</p>
             <a class="link" href="<?php echo $root; ?>docs/schede-prodotto/misuratore-di-ph.pdf">Scopri di più</a> 
           </div>
-          <div class="card-xl bg-blue" style="color: white;">
+          <div class="btn-mega bg-blue" style="color: white;">
             <p><a class="link" href="<?php echo $root; ?>azienda/contatti.php" style="color: white;">Richiedi un preventivo</a></p>
           </div>
           <div class="video">

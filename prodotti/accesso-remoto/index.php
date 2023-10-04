@@ -501,13 +501,13 @@
           </div>
         </div>
         <aside>
-          <div class="card-xl bg-gray">
+          <div class="btn-mega bg-gray">
             <p>Scheda prodotto</p>
             <a class="link"
               href="<?php echo $root; ?>docs/note-tecniche/accesso-remoto-analizzatori.pdf">Scopri di
             più</a>
           </div>
-          <div class="card-xl bg-blue" style="color: white;">
+          <div class="btn-mega bg-blue" style="color: white;">
             <p><a class="link" href="<?php echo $root; ?>azienda/contatti.php"
               style="color: white;">Richiedi un preventivo</a></p>
           </div>

@@ -103,9 +103,21 @@ include( './../includes/top-and-nav.php' );
   </div>
   <!-- filter end --> 
   
-  <!-- sensori and analizzatori list -->
+  <!-- Analizzatori list -->
   <section class="wrapper-a">
     <div class="container container-padding">
+      <h2>Analizzatori</h2>
+      <div class="grid-2-columns">
+        <?php include( '../includes/snippets/crius-card-lg-snippet.php' ); ?>
+        <?php include( '../includes/snippets/cronos-card-lg-snippet.php' ); ?>
+      </div>
+    </div>
+  </section>
+  <!-- Analizzatori end --> 
+  <!-- sensori in linea -->
+  <section class="wrapper-a">
+    <div class="container container-padding">
+      <h2><a id="inlinea">Sensori in linea</a></h2>
       <div class="grid-2-columns">
         <?php include( '../includes/snippets/perasense-card-lg-snippet.php' ); ?>
         <?php include( '../includes/snippets/conductisense-card-lg-snippet.php' ); ?>
@@ -113,7 +125,6 @@ include( './../includes/top-and-nav.php' );
         <?php include( '../includes/snippets/solisense-card-lg-snippet.php' ); ?>
         <?php include( '../includes/snippets/orpsense-card-lg-snippet.php' ); ?>
         <?php include( '../includes/snippets/halosense-card-lg-snippet.php' ); ?>
-        <?php include( '../includes/snippets/crius-card-lg-snippet.php' ); ?>
         <?php include( '../includes/snippets/particlesense-card-lg-snippet.php' ); ?>
         <?php include( '../includes/snippets/countersense-card-lg-snippet.php' ); ?>
         <?php include( '../includes/snippets/coagsense-card-lg-snippet.php' ); ?>
@@ -129,11 +140,72 @@ include( './../includes/top-and-nav.php' );
         <?php include( '../includes/snippets/chargesense-card-lg-snippet.php' ); ?>
         <?php include( '../includes/snippets/accesso-remoto-card-lg-snippet.php' ); ?>
         <?php include( '../includes/snippets/centralina-per-piscine-card-lg-snippet.php' ); ?>
-        <?php include( '../includes/snippets/cronos-card-lg-snippet.php' ); ?>
       </div>
     </div>
   </section>
-  <!-- sensori list end --> 
+  <!-- sensori in linea end --> 
+  <!-- sensori portatili -->
+  <section class="wrapper-a">
+    <div class="container container-padding">
+      <h2><a id="portatili">Sensori portatili</a></h2>
+      <div class="grid-2-columns">
+        <?php include( '../includes/snippets/analisi-visiva-arsenico-vcdk.php' ); ?>
+        <?php include( '../includes/snippets/comparatore-contorni-per-piscina.php' ); ?>
+        <?php include( '../includes/snippets/comparatore-di-contorni.php' ); ?>
+        <?php include( '../includes/snippets/fotometro-lumiso-pooltest-3.php' ); ?>
+        <?php include( '../includes/snippets/fotometro-lumiso-pooltest-4.php' ); ?>
+        <?php include( '../includes/snippets/fotometro-lumiso-pooltest-6.php' ); ?>
+        <?php include( '../includes/snippets/kemio-disinfection-snippet.php' ); ?>
+        <?php include( '../includes/snippets/kemio-heavy-metals-snippet.php' ); ?>
+        <?php /* include( '../includes/snippets/kemio-multi-snippet.php' ); */ ?>
+        <?php include( '../includes/snippets/kit-acque-reflue-effluenti.php' ); ?>
+        <?php include( '../includes/snippets/kit-bilancio-idrico.php' ); ?>
+        <?php include( '../includes/snippets/kit-conteggio-compresse.php' ); ?>
+        <?php include( '../includes/snippets/kit-digitale-per-la-misurazione-arsenico-snippet.php' ); ?>
+        <?php include( '../includes/snippets/kit-pooltester.php' ); ?>
+        <?php include( '../includes/snippets/kit-tascabili.php' ); ?>
+        <?php include( '../includes/snippets/lumiso-ammonia.php' ); ?>
+        <?php include( '../includes/snippets/lumiso-chlorine.php' ); ?>
+        <?php include( '../includes/snippets/lumiso-chlorine-dioxide.php' ); ?>
+        <?php include( '../includes/snippets/lumiso-chlorine-turbidity-kit.php' ); ?>
+        <?php include( '../includes/snippets/lumiso-expert.php' ); ?>
+        <?php include( '../includes/snippets/lumiso-ozone.php' ); ?>
+        <?php include( '../includes/snippets/lumiso-pooltest-expert.php' ); ?>
+        <?php include( '../includes/snippets/macro-900.php' ); ?>
+        <?php include( '../includes/snippets/micro-600-conducibilita.php' ); ?>
+        <?php include( '../includes/snippets/micro-600-od.php' ); ?>
+        <?php include( '../includes/snippets/micro-600-ph.php' ); ?>
+        <?php include( '../includes/snippets/micro-600-tds.php' ); ?>
+        <?php include( '../includes/snippets/micro-800-conducibilita.php' ); ?>
+        <?php include( '../includes/snippets/micro-800-multiparametro.php' ); ?>
+        <?php include( '../includes/snippets/micro-800-od.php' ); ?>
+        <?php include( '../includes/snippets/micro-800-ph.php' ); ?>
+        <?php include( '../includes/snippets/misuratori-elettrochimici-piscina.php' ); ?>
+        <?php include( '../includes/snippets/sensore-tascabile-conducibilità.php' ); ?>
+        <?php include( '../includes/snippets/sensore-tascabile-multiparametro.php' ); ?>
+        <?php include( '../includes/snippets/sensore-tascabile-ph.php' ); ?>
+        <?php include( '../includes/snippets/sensore-tascabile-tds.php' ); ?>
+        <?php include( '../includes/snippets/sk100.php' ); ?>
+        <?php include( '../includes/snippets/sk200.php' ); ?>
+        <?php include( '../includes/snippets/sk300.php' ); ?>
+        <?php include( '../includes/snippets/sk400.php' ); ?>
+        <?php include( '../includes/snippets/sk500.php' ); ?>
+        <?php include( '../includes/snippets/striscie-reattive-piscina.php' ); ?>
+        <?php include( '../includes/snippets/tubo-torbidità.php' ); ?>
+        <?php include( '../includes/snippets/turbidimeter-plus.php' ); ?>
+        <?php include( '../includes/snippets/vetrini-immersione.php' ); ?>
+        <?php include( '../includes/snippets/wagtech-kit-sicurezza-acqua.php' ); ?>
+        <?php include( '../includes/snippets/wagtech-potacheck.php' ); ?>
+        <?php include( '../includes/snippets/wagtech-potakit.php' ); ?>
+        <?php include( '../includes/snippets/wagtech-potalab.php' ); ?>
+        <?php include( '../includes/snippets/wagtech-potatech.php' ); ?>
+        <?php include( '../includes/snippets/wagtech-potatest-classic.php' ); ?>
+        <?php include( '../includes/snippets/wagtech-potatest-go.php' ); ?>
+        <?php include( '../includes/snippets/wagtech-potatest-dual.php' ); ?>
+      </div>
+    </div>
+  </section>
+  <!-- sensori portatili end --> 
   
 <!-- contact form slim --> 
 <!-- contact form slim END --> 

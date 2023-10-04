@@ -374,11 +374,11 @@
           </div>
         </div>
         <aside>
-          <div class="card-xl bg-gray">
+          <div class="btn-mega bg-gray">
             <p>Scheda prodotto</p>
             <a class="link" href="<?php echo $root; ?>docs/schede-prodotto/analizzatore-di-uv254.pdf">Scopri di più</a> 
           </div>
-          <div class="card-xl bg-blue" style="color: white;">
+          <div class="btn-mega bg-blue" style="color: white;">
             <p><a class="link" href="<?php echo $root; ?>azienda/contatti.php" style="color: white;">Richiedi un preventivo</a></p>
           </div>
           <h5>UV254 come surrogato per TOC, COD, BOD</h5>

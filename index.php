@@ -182,7 +182,7 @@ include( 'includes/top-and-nav.php' );
         </div>
         <div class="box-b">
           <h2>CRONOS<sup>®</sup></h2>
-          <p>Analizzatore multiparametrico base, supporta fino a <strong>2 parametri</strong>, <br> registro dati opzionale e funzioni di controllo e comunicazione avanzate.</p>
+          <p>Analizzatore multiparametrico base, supporta fino a <strong>2 parametri</strong>, registro dati opzionale e funzioni di controllo e comunicazione avanzate.</p>
           <span><a href="<?php echo $root; ?>prodotti/analizzatore-multiparametrico-base/" class="link">Scopri di più</a></span> <span><a href="<?php echo $root; ?>azienda/contatti.php" class="btn btn-primary">Preventivo</a></span> </div>
       </div>
     </div>
@@ -201,6 +201,7 @@ include( 'includes/top-and-nav.php' );
         </a> </div>
       <div class="scrollable-cards">
         <div class="card-sm card-gradient"> <a href="<?php echo $root; ?>prodotti/analizzatore-di-cloro/">
+        <div class="card-sm-inner">
           <div class="card-sm-top"> 
           <picture> 
               <source type="image/webp" srcset="<?php echo $root; ?>images/desktop/products/analizzatore-di-cloro180x154.webp">
@@ -209,9 +210,13 @@ include( 'includes/top-and-nav.php' );
           <div class="card-sm-bottom">
             <h2>HaloSense</h2>
             <p>Analizzatore per la misura del cloro libero, totale, combinato, in presenza di acido cianurico, per processi industriali e per impianti di trattamento municipali.</p>
-            <span class="btn btn-secondary">Scopri di più</span> </div>
-          </a> </div>
+            <span class="btn btn-secondary">Scopri di più</span> 
+          </div>
+        </div>
+          </a> 
+        </div>
         <div class="card-sm card-gradient"> <a href="<?php echo $root; ?>prodotti/misuratore-redox/">
+        <div class="card-sm-inner">
           <div class="card-sm-top"> 
           <picture> 
               <source type="image/webp" srcset="<?php echo $root; ?>images/desktop/products/misuratore-redox180x154.webp">
@@ -221,8 +226,10 @@ include( 'includes/top-and-nav.php' );
             <h2>ORPSense</h2>
             <p>Centralina per la misura in linea del potenziale redox, include una linea di sensori per applicazioni in acque potabili, reflue ed industriali.</p>
             <span class="btn btn-secondary">Scopri di più</span> </div>
+        </div>
           </a> </div>
         <div class="card-sm card-gradient"> <a href="<?php echo $root; ?>prodotti/analizzatore-di-ossigeno-disciolto/">
+        <div class="card-sm-inner">
           <div class="card-sm-top"> 
           <picture> 
               <source type="image/webp" srcset="<?php echo $root; ?>images/desktop/products/analizzatore-di-ossigeno-disciolto180x154.webp">
@@ -232,8 +239,10 @@ include( 'includes/top-and-nav.php' );
             <h2>OxySense</h2>
             <p>Sistema per la misura in linea ed in continuo dell'ossigeno disciolto in acque reflue, ideale per la misura in vasche di aerazione. La linea include tre sensori differenti rispettivamente per acque reflue, industriali e per caldaie industriali.</p>
             <span class="btn btn-secondary">Scopri di più</span> </div>
+        </div>
           </a> </div>
         <div class="card-sm card-gradient"> <a href="<?php echo $root; ?>prodotti/analizzatore-di-ph/">
+        <div class="card-sm-inner">
           <div class="card-sm-top"> 
           <picture> 
               <source type="image/webp" srcset="<?php echo $root; ?>images/desktop/products/analizzatore-di-ph180x154.webp">
@@ -243,8 +252,10 @@ include( 'includes/top-and-nav.php' );
             <h2>pHSense</h2>
             <p>Centralina e misuratore di pH in linea, include una linea di sensori di pH per acque reflue, potabili, di processo, industriali e per piscine.</p>
             <span class="btn btn-secondary">Scopri di più</span> </div>
+        </div>
           </a> </div>
         <div class="card-sm card-gradient"> <a href="<?php echo $root; ?>prodotti/analizzatore-di-biossido-di-cloro/">
+        <div class="card-sm-inner">
           <div class="card-sm-top"> 
           <picture> 
               <source type="image/webp" srcset="<?php echo $root; ?>images/desktop/products/analizzatore-di-biossido-di-cloro180x154.webp">
@@ -254,8 +265,10 @@ include( 'includes/top-and-nav.php' );
             <h2>DioSense</h2>
             <p>Analizzatore per la misurazione in linea ed in continuo del biossido di cloro. Il sensore standard misura il biossido di cloro e su richiesta è possibile effettuare la misura del clorito.</p>
             <span class="btn btn-secondary">Scopri di più</span> </div>
+        </div>
           </a> </div>
         <div class="card-sm card-gradient"> <a href="<?php echo $root; ?>prodotti/analizzatore-corrente-fluente-coagulazione/">
+        <div class="card-sm-inner">
           <div class="card-sm-top"> 
           <picture> 
               <source type="image/webp" srcset="<?php echo $root; ?>images/desktop/products/analizzatore-corrente-fluente-coagulazione180x154.webp">
@@ -265,9 +278,122 @@ include( 'includes/top-and-nav.php' );
             <h2>StreamerSense</h2>
             <p>Sistema per il controllo automatico della coagulazione. Lo StreamerSense è un sistema innovativo che permette di misurare in linea ed in continuo la domanda di coagulante ed utilizzare il segnale per automatizzare il dosaggio del coagulante.</p>
             <span class="btn btn-secondary">Scopri di più</span> </div>
+        </div>
           </a> </div>
       </div>
-      <span><a href="<?php echo $root; ?>prodotti/sensori-in-linea/" class="link">Lista sensori</a></span> </div>
+      <span><a href="<?php echo $root; ?>prodotti/index.php#inlinea" class="link">Lista sensori</a></span> </div>
+  </section>
+  <!-- SENSORS END --> 
+
+  <!-- SENSORS -->
+  <section class="home-section-wrap">
+    <div class="container container-padding">
+      <div class="home-section-title">
+        <h3><a href="<?php echo $root; ?>prodotti/">Sensori portatili</a></h3>
+        <a href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+          <path class="right-arrow" data-name="Right Arrow" d="M8,0,6.545,1.455l5.506,5.506H0V9.039H12.052L6.545,14.545,8,16l8-8Z" fill="#6B6D69"/>
+        </svg>
+        </a> </div>
+      <div class="scrollable-cards">
+        <div class="card-sm card-gradient"> <a href="<?php echo $root; ?>prodotti/analisi-visiva-arsenico-vcdk/">
+        <div class="card-sm-inner">
+          <div class="card-sm-top"> 
+            <picture> 
+              <!-- <source type="image/webp" srcset="<?php echo $root; ?>images/desktop/products/analizzatore-di-cloro180x154.webp"> -->
+              <img src="<?php echo $root; ?>images/palintest/vcdk-180x154.png" alt="VCDK"> 
+            </picture>
+          </div>
+          <div class="card-sm-bottom">
+            <h2>Analisi visiva su arsenico VCDK</h2>
+            <p>Questo semplice kit di analisi visive permette di effettuare analisi del livello di arsenico con risultati rapidi. Dunque, permette di dentificare la contaminazione dell'acqua nelle comunità rurali.</p>
+            <span class="btn btn-secondary">Scopri di più</span> 
+          </div>
+        </div>
+          </a> 
+        </div>
+        <div class="card-sm card-gradient"> <a href="<?php echo $root; ?>prodotti/macro-900/">
+        <div class="card-sm-inner">
+          <div class="card-sm-top"> 
+            <picture> 
+              <!-- <source type="image/webp" srcset="<?php echo $root; ?>images/desktop/products/analizzatore-di-cloro180x154.webp"> -->
+              <img src="<?php echo $root; ?>images/palintest/Macro900-kit-180x154.png" alt="Pannello dell'accesso remoto"> 
+            </picture>
+          </div>
+          <div class="card-sm-bottom">
+            <h2>Sistema di analisi della qualità dell’acqua Macro 900</h2>
+            <p>Macro 900 è un kit completamente personalizzabile, su misura per le tue esigenze.</p>
+            <span class="btn btn-secondary">Scopri di più</span> 
+          </div>
+        </div>
+          </a> 
+        </div>
+        <div class="card-sm card-gradient"> <a href="<?php echo $root; ?>prodotti/wagtech-potacheck/">
+        <div class="card-sm-inner">
+          <div class="card-sm-top"> 
+            <picture> 
+              <!-- <source type="image/webp" srcset="<?php echo $root; ?>images/desktop/products/analizzatore-di-cloro180x154.webp"> -->
+              <img src="<?php echo $root; ?>images/palintest/Potacheck-1-180x154.png" alt="Potacheck"> 
+            </picture>
+          </div>
+          <div class="card-sm-bottom">
+            <h2>Wagtech&trade; Potacheck+</h2>
+            <p>Wagtech&trade; Potacheck+ è progettato per l'uso sul campo. La sua strumentazione digitale consente di effettuare analisi su una gamma completa di parametri chimici e fisici.</p>
+            <span class="btn btn-secondary">Scopri di più</span> 
+          </div>
+        </div>
+          </a> 
+        </div>
+        <div class="card-sm card-gradient"> <a href="<?php echo $root; ?>prodotti/sk100/">
+        <div class="card-sm-inner">
+          <div class="card-sm-top"> 
+            <picture> 
+              <!-- <source type="image/webp" srcset="<?php echo $root; ?>images/desktop/products/analizzatore-di-cloro180x154.webp"> -->
+              <img src="<?php echo $root; ?>images/palintest/SK-100-3-180x154.png" alt="SK100"> 
+            </picture>
+          </div>
+          <div class="card-sm-bottom">
+            <h2>SK100 Kit per l’analisi del pH del suolo e del fabbisogno in calce (Soil pH and Lime Requirement Kit)</h2>
+            <p>Il livello base del kit di analisi del suolo, ovvero il kit SK100, include tutta l’attrezzatura necessaria per misurare il pH del suolo e il fabbisogno in calce e per determinare la disponibilità di nutrienti chiave nel suolo.</p>
+            <span class="btn btn-secondary">Scopri di più</span> 
+          </div>
+        </div>
+          </a> 
+        </div>
+        <div class="card-sm card-gradient"> <a href="<?php echo $root; ?>prodotti/lumiso-ozone/">
+        <div class="card-sm-inner">
+          <div class="card-sm-top"> 
+            <picture> 
+              <!-- <source type="image/webp" srcset="<?php echo $root; ?>images/desktop/products/analizzatore-di-cloro180x154.webp"> -->
+              <img src="<?php echo $root; ?>images/palintest/Ozone-Kit-scaled-180x154.png" alt="Lumiso Ozone"> 
+            </picture>
+          </div>
+          <div class="card-sm-bottom">
+            <h2>Lumiso Ozone (Ozono)</h2>
+            <p>Con Lumiso Ozone puoi individuare in maniera rapida e accurata la quantità di ozono presente nelle acque potabili, reflue o da utilizzare nella produzione di alimenti e bevande.</p>
+            <span class="btn btn-secondary">Scopri di più</span> 
+          </div>
+        </div>
+          </a> 
+        </div>
+        <div class="card-sm card-gradient"> <a href="<?php echo $root; ?>prodotti/sensore-tascabile-multiparametrico/">
+        <div class="card-sm-inner">
+          <div class="card-sm-top"> 
+            <picture> 
+              <!-- <source type="image/webp" srcset="<?php echo $root; ?>images/desktop/products/analizzatore-di-cloro180x154.webp"> -->
+              <img src="<?php echo $root; ?>images/palintest/Multiparameter-pocket-sensor-180x154.png" alt="Sensore tascabile multiparametrico"> 
+            </picture>
+          </div>
+          <div class="card-sm-bottom">
+            <h2>Sensore tascabile multiparametro</h2>
+            <p>Il sensore tascabile multiparametro esegue test altamente accurati di cinque parametri.</p>
+            <span class="btn btn-secondary">Scopri di più</span> 
+          </div>
+        </div>
+          </a> 
+        </div>
+      </div>
+      <span><a href="<?php echo $root; ?>prodotti/index.php#portatili" class="link">Lista sensori</a></span> </div>
   </section>
   <!-- SENSORS END --> 
   
